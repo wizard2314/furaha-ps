@@ -10,7 +10,7 @@
 ## REQUIREMENTS
  - PHP >= 8.0
  - LARAVEL >= 10
- - COMPOSER >= 2.1
+ - COMPOSER >= 2.5.4
 
 ## Installation 
 
