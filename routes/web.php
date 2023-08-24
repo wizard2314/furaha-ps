@@ -21,6 +21,14 @@ Route::get('/about-us', function () {
     return view('about');
 });
 
+Route::get('/admission', function() {
+    return view('admission');
+});
+
+Route::get('/special-courses', function(){
+    return view('courses');
+});
+
 Route::get('/staff', function () {
     return view('staff');
 });
@@ -39,12 +47,12 @@ Route::post('/events/store', [EventController::class, 'store'])->name('events.st
 
 Route::get('events/{id}', [EventController::class, 'single'])->name('events.single');
 
-Route::get('/long-courses', function () {
-    return view('courses.long');
-})->name('courses.long');
+// Route::get('/long-courses', function () {
+//     return view('courses.long');
+// })->name('courses.long');
 
-Route::get('/short-courses', function () {
-    return view('courses.short');
-})->name('courses.short');
+// Route::get('/short-courses', function () {
+//     return view('courses.short');
+// })->name('courses.short');
 
 Route::get('/application form', [FormController::class, 'download'])->name('formdownload');
